@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --transparente : rgba(0, 0, 0, 0.221);
+    --cor00: white;
+    --cor01: black;
+    --cor02: darkgray;
+    --fonte00: "Passion One", cursive;
+    --fonte01: "Sriracha", cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--cor02);
+}
+
+header{
+    background-color: var(--cor01);
+    color: var(--cor00);
+    text-align: center;
+    margin-top: 0px;
+    max-height: 42.1vh;
+    min-height: 190px;
+}
+header>h1{
+    padding-top: 42px;
+    font: normal bold 70px var(--fonte00),Arial,Helvetica,sans-serif;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    padding-bottom: 20px;
+}
+
+header>p>a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    font-size: 1vw;
+}
+
+section>p{
+    font: normal 500 3em var(--fonte01),Arial,Helvetica,sans-serif;
+    line-height: 2em;
+    margin-left: 60px;
+    padding-bottom: 1.5em;
+}
+
+section.normal{
+    background-color: var(--cor00);
+}
+
+section.imagem{
+    color: var(--cor00);
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%)
+}
+#joaninha{
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+#livro{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+section.imagem>p{
+    display: inline-block;
+    margin-left: 50px;
+    padding: 0px 10px;
+    background-color: var(--transparente);
+    border-radius: 15px;
+    text-shadow: 1.4px 1.4px 0px black;
+}
+
+footer{
+    font: normal lighter 17px Arial,Helvetica,sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer>a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor00);
+}
